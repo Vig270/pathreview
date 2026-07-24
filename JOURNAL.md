@@ -23,3 +23,21 @@ I selected this Tier 2 issue because it requires understanding multiple parts of
 Used Docker Compose to start the required services (PostgreSQL, Redis, and ChromaDB). Resolved a ChromaDB startup issue caused by a NumPy version incompatibility by pinning NumPy to version 1.26.4. After restarting the containers, completed the project setup with `make setup` and verified the application by running `make run` and logging in successfully with the seeded test account.
 
 **Cohort ledger:** [x] Issue added to cohort ledger
+
+
+
+
+
+## Week 8 — Reproduction & solution planning
+
+**Reproduction commit link:** [your commit link]
+
+**Reproduction summary:**
+I reproduced the issue by running PathReview locally with Docker Compose and submitting a review request containing a portfolio URL. The application accepts and stores the URL, but the ingestion pipeline currently does not fetch or process portfolio website content.
+
+**PLAN.md link:** https://github.com/Vig270/pathreview/blob/feature/11-portfolio-url-ingestion/PLAN.md
+
+**Walkthrough video (recommended):** Not recorded.
+
+**Blockers or open questions:**
+Need to determine the best approach for fetching and parsing different portfolio website structures.
