@@ -27,10 +27,9 @@ Used Docker Compose to start the required services (PostgreSQL, Redis, and Chrom
 
 
 
-
 ## Week 8 — Reproduction & solution planning
 
-**Reproduction commit link:** [your commit link]
+**Reproduction commit link:** https://github.com/Vig270/pathreview/commit/7597f54
 
 **Reproduction summary:**
 I reproduced the issue by running PathReview locally with Docker Compose and submitting a review request containing a portfolio URL. The application accepts and stores the URL, but the ingestion pipeline currently does not fetch or process portfolio website content.
