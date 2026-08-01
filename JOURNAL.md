@@ -40,3 +40,45 @@ I reproduced the issue by running PathReview locally with Docker Compose and sub
 
 **Blockers or open questions:**
 Need to determine the best approach for fetching and parsing different portfolio website structures.
+
+
+
+## Week 9 — Solution building & PR submission
+
+### Check-in 1 (mid-week)
+
+**Current progress:**
+Implemented the portfolio URL ingestion feature for issue #11. Created a new `PortfolioParser` to fetch portfolio webpage content, remove unnecessary HTML elements, extract readable text, and return structured metadata. Integrated the parser into the ingestion pipeline and added unit tests covering portfolio parsing behavior.
+
+**Next steps:**
+Run project checks (`make check` and `make test-unit`), review changes, create a pull request, and request peer/mentor feedback.
+
+**Blockers:**
+The full test suite contains existing failures unrelated to my portfolio ingestion changes. The new portfolio parser tests pass successfully.
+
+---
+
+### Check-in 2 (end of week)
+
+**PR link:** https://github.com/Vig270/pathreview/pull/xxx
+
+**Branch:** feature/11-portfolio-url-ingestion
+
+**What you built:**
+Added portfolio URL ingestion support by creating a `PortfolioParser` that fetches webpage content, extracts readable text, and integrates with the existing ingestion pipeline. The extracted portfolio content can now be chunked and processed alongside other profile sources.
+
+**Tests added or updated:**
+Added `tests/unit/test_portfolio_parser.py`.
+
+Tests cover:
+- Successful portfolio webpage text extraction using mocked HTTP responses
+- Invalid content type handling
+
+**Self-review confirmation:**
+[ ] make check passes  
+[ ] make test-unit passes  
+
+**Notes:**
+`make check` and `make test-unit` were run. Existing failures were observed in unrelated modules and were not caused by the portfolio ingestion changes. The new portfolio parser tests pass independently.
+
+**Draft PR feedback received from:** none
