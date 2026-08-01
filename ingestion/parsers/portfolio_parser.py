@@ -59,6 +59,4 @@ class PortfolioParser(BaseParser):
             )
 
         except requests.RequestException as exc:
-            raise ValueError(
-                f"Failed to fetch portfolio website: {str(exc)}"
-            ) from exc
+            raise ValueError(f"Failed to fetch portfolio website: {str(exc)}") from exc
