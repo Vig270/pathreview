@@ -48,7 +48,7 @@ Need to determine the best approach for fetching and parsing different portfolio
 ### Check-in 1 (mid-week)
 
 **Current progress:**
-Implemented the portfolio URL ingestion feature for issue #11. Created a new `PortfolioParser` to fetch portfolio webpage content, remove unnecessary HTML elements, extract readable text, and return structured metadata. Integrated the parser into the ingestion pipeline and added unit tests covering portfolio parsing behavior.
+Implemented the portfolio URL ingestion feature for issue #11. Created a new `PortfolioParser` to fetch portfolio webpage content, extract readable text, and return structured metadata. Integrated the parser into the ingestion pipeline and added unit tests for portfolio parsing behavior.
 
 **Next steps:**
 Run project checks (`make check` and `make test-unit`), review changes, create a pull request, and request peer/mentor feedback.
@@ -60,7 +60,7 @@ The full test suite contains existing failures unrelated to my portfolio ingesti
 
 ### Check-in 2 (end of week)
 
-**PR link:** https://github.com/Vig270/pathreview/pull/xxx
+**PR link:** https://github.com/ascherj/pathreview/pull/522
 
 **Branch:** feature/11-portfolio-url-ingestion
 
@@ -72,13 +72,11 @@ Added `tests/unit/test_portfolio_parser.py`.
 
 Tests cover:
 - Successful portfolio webpage text extraction using mocked HTTP responses
-- Invalid content type handling
+- Invalid input handling for unsupported content types
 
 **Self-review confirmation:**
 [ ] make check passes  
 [ ] make test-unit passes  
 
 **Notes:**
-`make check` and `make test-unit` were run. Existing failures were observed in unrelated modules and were not caused by the portfolio ingestion changes. The new portfolio parser tests pass independently.
-
-**Draft PR feedback received from:** none
+Verified the new portfolio parser functionality using `pytest tests/unit/test_portfolio_parser.py`, which passes successfully. Full project checks (`make check`, `make test-unit`, and `make typecheck`) reported failures unrelated to the portfolio ingestion implementation.
