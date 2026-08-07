@@ -80,3 +80,40 @@ Tests cover:
 
 **Notes:**
 Verified the new portfolio parser functionality using `pytest tests/unit/test_portfolio_parser.py`, which passes successfully. Full project checks (`make check`, `make test-unit`, and `make typecheck`) reported failures unrelated to the portfolio ingestion implementation.
+
+
+
+
+
+
+
+## Week 10 — Iteration & reflection
+
+### Reviewer feedback
+
+**Feedback received:** [ ] Yes  [x] No — still awaiting review
+
+**Summary of feedback:**
+No reviewer or maintainer feedback has been received yet. The pull request is open and awaiting review.
+
+**How you responded:**
+
+
+---
+
+### Reflection
+
+**What was harder than you expected?**
+The hardest part was debugging and setting up Docker. Thankfully, I had previous experience using Docker in CodePath CYB 101, so I already had it installed and understood the basics. Even so, I still had to troubleshoot setup issues and plan a roadmap before implementing my changes. I chose Issue #11 because it aligns with my long-term career goal of becoming a Solution Engineer or a similar customer-facing technical role. Working on this issue also helped me become more comfortable reading and understanding an unfamiliar codebase.
+
+**What did you learn about working in a large codebase?**
+I learned that contributing to a large codebase requires understanding how different files connect rather than focusing on a single file. Before making changes, I needed to read the existing implementation, understand the project structure, and identify which files were responsible for specific functionality. Following the existing coding style and project organization was just as important as writing the new code itself.
+
+**How did AI tools help — and where did they fall short?**
+AI helped me understand unfamiliar parts of the codebase, explain how the ingestion pipeline worked, debug Git commands, write unit tests, and learn the GitHub pull request workflow. It was especially useful for explaining concepts and suggesting approaches when I was unsure where to begin. However, AI could not replace reading the project's code or understanding the repository's structure. I still needed to verify suggestions, debug issues myself, and determine which problems were caused by my changes versus existing issues in the project.
+
+**What would you do differently if you started over?**
+If I started over, I would spend more time exploring the codebase before writing any code so I could better understand how the different components interact. I would also make smaller, more frequent commits and spend more time understanding the project's testing process before implementing my changes.
+
+**What are you most proud of from this module?**
+I am most proud of learning the GitHub workflow. Before this module, I mostly used GitHub to upload projects from VS Code or download ZIP files. Through this project, I learned how to clone repositories, create branches, commit changes, push to a fork, and open a pull request. Most importantly, this was my first contribution to an open-source project, and it gave me confidence in working with a large, unfamiliar codebase. This experience has been incredibly rewarding, and I am proud of what I accomplished. It is something I would be excited to include on my resume and potentially share in a LinkedIn post as an important milestone in my learning journey.
